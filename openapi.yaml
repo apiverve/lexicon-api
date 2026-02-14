@@ -1,32 +1,36 @@
 openapi: 3.0.4
 info:
   title: Word Lexicon Analyzer
-  description: Lexicon is a simple tool for analyzing words. It returns various properties of the word.
+  description: >-
+    Lexicon is a simple tool for analyzing words. It returns various properties
+    of the word.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/lexicon:
     get:
       summary: Analyze Word
-      description: Lexicon is a simple tool for analyzing words. It returns various properties of the word.
+      description: >-
+        Lexicon is a simple tool for analyzing words. It returns various
+        properties of the word.
       operationId: lexicon
       parameters:
-      - name: word
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The word to analyze
-        example: listen
+        - name: word
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The word to analyze
+          example: listen
       responses:
         '200':
           description: Successful Response
@@ -42,11 +46,11 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   word: listen
                   isAlphagram: false
@@ -62,7 +66,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -70,4 +74,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
