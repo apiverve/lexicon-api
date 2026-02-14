@@ -17,14 +17,11 @@ def call_lexicon_api():
     Make a GET request to the Word Lexicon Analyzer API
     """
     try:
-        # Query parameters
-        params &#x3D; {&#x27;word&#x27;: &#x27;listen&#x27;}
-
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers, params=params)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
