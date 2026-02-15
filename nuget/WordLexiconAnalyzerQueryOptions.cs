@@ -12,7 +12,6 @@ namespace APIVerve.API.WordLexiconAnalyzer
     {
         /// <summary>
         /// The word to analyze
-        /// Example: listen
         /// </summary>
         [JsonProperty("word")]
         public string Word { get; set; }
