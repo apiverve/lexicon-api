@@ -224,8 +224,9 @@ from apiverve_wordlexiconanalyzer.apiClient import LexiconAPIClient
 
 api = LexiconAPIClient("[YOUR_API_KEY]")
 
+query = { "word": "listen" }
+
 try:
-    query = { "word": "listen" }
     result = api.execute(query)
     print(result)
 finally:
