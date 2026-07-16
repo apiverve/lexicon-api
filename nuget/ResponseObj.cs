@@ -25,6 +25,9 @@ namespace APIVerve.API.WordLexiconAnalyzer
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -33,27 +36,39 @@ namespace APIVerve.API.WordLexiconAnalyzer
         public string Word { get; set; }
 
         [JsonProperty("isAlphagram")]
-        public bool IsAlphagram { get; set; }
+        public bool? IsAlphagram { get; set; }
 
         [JsonProperty("sortedForm")]
         public string SortedForm { get; set; }
 
         [JsonProperty("isPalindrome")]
-        public bool IsPalindrome { get; set; }
+        public bool? IsPalindrome { get; set; }
 
         [JsonProperty("hasAnagram")]
-        public bool HasAnagram { get; set; }
+        public bool? HasAnagram { get; set; }
 
         [JsonProperty("isIsogram")]
-        public bool IsIsogram { get; set; }
+        public bool? IsIsogram { get; set; }
 
         [JsonProperty("isPangramCandidate")]
-        public bool IsPangramCandidate { get; set; }
+        public bool? IsPangramCandidate { get; set; }
 
         [JsonProperty("isScrabbleValid")]
-        public bool IsScrabbleValid { get; set; }
+        public bool? IsScrabbleValid { get; set; }
 
         [JsonProperty("canBePalindromeAnagram")]
-        public bool CanBePalindromeAnagram { get; set; }
+        public bool? CanBePalindromeAnagram { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
