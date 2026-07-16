@@ -191,11 +191,36 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Word Lexicon Analyzer API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "word": "listen",
+    "isAlphagram": false,
+    "sortedForm": "eilnst",
+    "isPalindrome": false,
+    "hasAnagram": false,
+    "isIsogram": true,
+    "isPangramCandidate": false,
+    "isScrabbleValid": true,
+    "canBePalindromeAnagram": false
+  }
 }
 ```
 
