@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/lexicon",
+    "description": "Lexicon is a simple tool for analyzing words. It returns various properties of the word.",
+    "version": "1.2.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "lexicon",
+        "lexicon",
+        "lexicon api",
+        "lexicon tool",
+        "lexicon software",
+        "lexicon service"
+    ],
+    "homepage": "https://apiverve.com/marketplace/lexicon?utm_source=php&utm_medium=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/lexicon",
+        "source": "https://github.com/apiverve/lexicon-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Lexicon\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Lexicon\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
