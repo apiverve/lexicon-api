@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/lexicon",
-  "version": "1.2.0",
-  "description": "Lexicon is a simple tool for analyzing words. It returns various properties of the word.",
+  "version": "1.2.2",
+  "description": "Word Lexicon Analyzer inspects any single word to check linguistic properties including palindromes, isograms, and Scrabble validity. It identifies anagram potential, alphagram status, and sorted letter forms.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "lexicon", "lexicon api", "lexicon tool", "lexicon software", "lexicon service"
+    "word lexicon api", "scrabble word checker", "palindrome checker", "anagram validator", "isogram finder"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/lexicon-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/lexicon?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/lexicon?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
