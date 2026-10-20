@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Word Lexicon Analyzer
   description: >-
-    Lexicon is a simple tool for analyzing words. It returns various properties
-    of the word.
+    Word Lexicon Analyzer inspects any single word to check linguistic
+    properties including palindromes, isograms, and Scrabble validity. It
+    identifies anagram potential, alphagram status, and sorted letter forms.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/lexicon:
     get:
-      summary: Analyze Word
+      summary: Word Lexicon Analyzer
       description: >-
         Lexicon is a simple tool for analyzing words. It returns various
         properties of the word.
