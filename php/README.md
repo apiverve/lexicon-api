@@ -1,6 +1,6 @@
 # Word Lexicon Analyzer API - PHP Package
 
-Lexicon is a simple tool for analyzing words. It returns various properties of the word.
+Word Lexicon Analyzer inspects any single word to check linguistic properties including palindromes, isograms, and Scrabble validity. It identifies anagram potential, alphagram status, and sorted letter forms.
 
 ## Installation
 
@@ -89,11 +89,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/lexicon?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/lexicon?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/lexicon?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/lexicon?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/lexicon?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/lexicon?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

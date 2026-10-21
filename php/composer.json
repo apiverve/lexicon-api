@@ -1,7 +1,7 @@
 {
     "name": "apiverve/lexicon",
-    "description": "Lexicon is a simple tool for analyzing words. It returns various properties of the word.",
-    "version": "1.2.0",
+    "description": "Word Lexicon Analyzer inspects any single word to check linguistic properties including palindromes, isograms, and Scrabble validity. It identifies anagram potential, alphagram status, and sorted letter forms.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "lexicon",
-        "lexicon",
-        "lexicon api",
-        "lexicon tool",
-        "lexicon software",
-        "lexicon service"
+        "word lexicon api",
+        "scrabble word checker",
+        "palindrome checker",
+        "anagram validator",
+        "isogram finder"
     ],
-    "homepage": "https://apiverve.com/marketplace/lexicon?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/lexicon?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/lexicon",
