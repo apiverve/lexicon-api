@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/lexicon",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Word Lexicon Analyzer inspects any single word to check linguistic properties including palindromes, isograms, and Scrabble validity. It identifies anagram potential, alphagram status, and sorted letter forms.",
   "main": "index.js",
   "types": "index.d.ts",
